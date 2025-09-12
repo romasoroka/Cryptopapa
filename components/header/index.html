@@ -34,7 +34,7 @@
         <div class="icon phone">
           <img src="../../icons/phone.jpg" alt="Phone">
         </div>
-        <div class="language-selector">
+        <div class="language-selector" tabindex="0">
   <span class="language-text">UA</span>
   <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="currentColor">
     <path d="M7 10l5 5 5-5z"/>
@@ -58,5 +58,21 @@
       </ul>
     </nav>
   </header>
+
+  <script>
+  const languageSelector = document.querySelector('.language-selector');
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+
+  languageSelector.addEventListener('click', (e) => {
+    e.preventDefault();
+    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!languageSelector.contains(e.target)) {
+      dropdownMenu.style.display = 'none';
+    }
+  });
+</script>
 </body>
 </html>
