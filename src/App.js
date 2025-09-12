@@ -4,13 +4,14 @@ import { BrowserRouter } from 'react-router-dom';
 import Header from './components/header/Header';
 import Main from './pages/main/Main';
 import Footer from './components/footer/Footer';
+import NotFound from './pages/notFound/NotFound';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <Header />
-        <Main />
+        <NotFound />
         <Footer />
       </div>
     </BrowserRouter>
