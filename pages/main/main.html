@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptopapa Main</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../components/header/styles.css"> <!-- Оновлений шлях до стилів хедера -->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- Хедер (залишається як є) -->
+  <header class="header">
+    <div class="header-top">
+      <img class="logo" src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/group-7.png" alt="Group">
+      <button class="nav-button">
+        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' class="menu-icon">
+          <path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/>
+      </svg>
+        <span class="button-text">Каталог</span>
+      </button>
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Знайти товар">
+        <div class="search-icon"></div>
+      </div>
+      <div class="header-right">
+        <div class="icon cart">
+          <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/vector.svg" alt="Cart">
+          <div class="badge" style="background-color: #ff7800;">2</div>
+        </div>
+        <div class="icon favorites">
+          <img src="../../icons/heart.jpg" alt="Favorites">
+          <div class="badge" style="background-color: #d93333;">2</div>
+        </div>
+        <div class="icon phone">
+          <img src="../../icons/phone.jpg" alt="Phone">
+        </div>
+        <div class="language-selector" tabindex="0">
+          <span class="language-text">UA</span>
+          <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 10l5 5 5-5z"/>
+          </svg>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Українська</a>
+            <a href="#" class="dropdown-item">Русский</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li class="nav-item active"><a href="#">Головна</a></li>
+        <li class="nav-item"><a href="#">Обладнання</a></li>
+        <li class="nav-item"><a href="#">Криптокотли</a></li>
+        <li class="nav-item"><a href="#">Сонячні станції</a></li>
+        <li class="nav-item"><a href="#">Про компанію</a></li>
+        <li class="nav-item"><a href="#">Прошивка</a></li>
+        <li class="nav-item"><a href="#">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Основний контент -->
+  <main class="main-content">
+    <!-- Hero Section з фоновим зображенням -->
+    <section class="hero-section">
+      <div class="hero-background">
+        <img src="../../images/banner.jpg" alt="Banner" class="hero-bg-image">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <div class="promo-text">
+          <h2 class="promo-subtitle">СУПЕР ЦІНА</h2>
+          <h1 class="promo-title">ПОЧНИ ЗАРОБЛЯТИ НА МАЙНІНГУ КРИПТОВАЛЮТИ ВЖЕ СЬОГОДНІ!</h1>
+          <p class="promo-description">Зʼявжіться з нашим менеджером, щоб дізнатися всі деталі</p>
+        </div>
+        <div class="hero-cta">
+          <button class="telegram-button">
+            <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/ic-baseline-telegram.svg" alt="Telegram" class="telegram-icon">
+            <span>Написати в Telegram</span>
+          </button>
+          <button class="social-button viber">
+            <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/basil-viber-solid.svg" alt="Viber">
+          </button>
+          <button class="social-button whatsapp">
+            <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/mingcute-whatsapp-fill.svg" alt="WhatsApp">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Popup -->
+    <div class="cart-popup">
+      <div class="cart-card">
+        <div class="cart-header">
+          <h2>Кошик</h2>
+          <span>1 товар</span>
+          <button class="close-cart">×</button>
+        </div>
+        <div class="cart-items">
+          <div class="cart-item">
+            <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/rectangle-93.svg" alt="Bitmain Antminer L9">
+            <div class="item-info">
+              <h3>Bitmain Antminer L9 Scrypt 15 Gh</h3>
+              <p class="item-price">9000$</p>
+              <button class="go-to-item">Перейти до товару <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
+              <div class="quantity-control">
+                <button class="qty-btn minus">-</button>
+                <span class="qty">1</span>
+                <button class="qty-btn plus">+</button>
+              </div>
+            </div>
+          </div>
+          <!-- Додатковий елемент -->
+          <div class="cart-item">
+            <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/rectangle-93.svg" alt="Bitmain Antminer L9">
+            <div class="item-info">
+              <h3>Bitmain Antminer L9 Scrypt 15 Gh</h3>
+              <p class="item-price">9000$</p>
+              <button class="go-to-item">Перейти до товару <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
+              <div class="quantity-control">
+                <button class="qty-btn minus">-</button>
+                <span class="qty">1</span>
+                <button class="qty-btn plus">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-footer">
+          <div class="total-price">
+            <span>Разом: </span>
+            <span>18 000$</span>
+          </div>
+          <button class="checkout-btn">Оформити замовлення</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">5 РОКІВ</div>
+          <p>На ринку<br>в Україні</p>
+        </div>
+        <div class="stat-separator"></div>
+        <div class="stat-item">
+          <div class="stat-number">1000+</div>
+          <p>Довольних<br>клієнтів</p>
+        </div>
+        <div class="stat-separator"></div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <p>Гарантія<br>безпеки</p>
+        </div>
+        <div class="stat-separator"></div>
+        <div class="stat-item icon-stat">
+          <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/tech-support-number---iconsvg-co.svg" alt="Tech Support">
+          <p>Тех. підтримка<br>24 на 7</p>
+        </div>
+        <div class="stat-separator"></div>
+        <div class="stat-item icon-stat">
+          <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/box-up-your-things---iconsvg-co.svg" alt="Direct Delivery">
+          <p>Прямі<br>Поставки</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // JavaScript для дропдауна мов
+    const languageSelector = document.querySelector('.language-selector');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    if (languageSelector && dropdownMenu) {
+      languageSelector.addEventListener('click', (e) => {
+        e.preventDefault();
+        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!languageSelector.contains(e.target)) {
+          dropdownMenu.style.display = 'none';
+        }
+      });
+    }
+
+    // Показати кошик при кліку на іконку кошика
+    const cartIcon = document.querySelector('.icon.cart');
+    const cartPopup = document.querySelector('.cart-popup');
+    if (cartIcon && cartPopup) {
+      cartIcon.addEventListener('click', (e) => {
+        e.stopPropagation();
+        cartPopup.style.display = 'block';
+      });
+    }
+
+    const closeCart = document.querySelector('.close-cart');
+    if (closeCart) {
+      closeCart.addEventListener('click', () => {
+        cartPopup.style.display = 'none';
+      });
+    }
+
+    // Закриття кошика при кліку поза ним
+    document.addEventListener('click', (e) => {
+      if (!cartPopup.contains(e.target) && cartPopup.style.display === 'block') {
+        cartPopup.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
