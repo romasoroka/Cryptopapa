@@ -1,0 +1,528 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+.mining-section {
+  width: 1620px;
+  margin: 0 auto;
+}
+
+.mining-box {
+  position: relative;
+  width: 100%;
+  height: 911px;
+}
+
+.mining-box .mining-view {
+  position: relative;
+  width: 100%;
+  height: 911px;
+}
+
+.mining-box .mining-group {
+  position: absolute;
+  width: 1225px;
+  height: 118px;
+  top: 0;
+  left: 0;
+}
+
+.mining-box .mining-div {
+  position: relative;
+  width: 1229px;
+  height: 118px;
+}
+
+.mining-box .mining-title {
+  position: absolute;
+  width: 850px;
+  top: 0;
+  left: 0;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-text-wrapper {
+  color: #000000;
+}
+
+.mining-box .mining-span {
+  font-weight: 700;
+  color: #000000;
+}
+
+.mining-box .mining-text-wrapper-2 {
+  font-weight: 700;
+  color: #ffa500;
+}
+
+.mining-box .mining-text-wrapper-3 {
+  position: absolute;
+  width: 424px;
+  top: 63px;
+  left: 801px;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Montserrat", Helvetica;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 30px;
+}
+
+.mining-box .mining-group-2 {
+  position: absolute;
+  width: 1620px;
+  height: 743px;
+  top: 168px;
+  left: 0;
+}
+
+.mining-box .mining-overlap-group-wrapper {
+  position: absolute;
+  width: 929px;
+  height: 340px;
+  top: 0;
+  left: 0;
+}
+
+.mining-box .mining-overlap-group {
+  position: relative;
+  width: 923px;
+  height: 340px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 1px solid #000000;
+}
+
+.mining-box .mining-text-wrapper-4 {
+  position: absolute;
+  width: 331px;
+  top: 31px;
+  left: 116px;
+  font-weight: 700;
+  font-size: 28px;
+  font-family: "Montserrat", Helvetica;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-text-wrapper-5 {
+  position: absolute;
+  width: 365px;
+  top: 199px;
+  left: 47px;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Montserrat", Helvetica;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-text-wrapper-6 {
+  top: 26px;
+  left: 47px;
+  position: absolute;
+  text-shadow: 0px 0px 18px #ffa50080;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #ffa500;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-icon {
+  position: absolute;
+  width: 392px;
+  height: 282px;
+  top: 30px;
+  left: 492px;
+  object-fit: cover;
+}
+
+.mining-box .mining-group-3 {
+  position: absolute;
+  width: 942px;
+  height: 385px;
+  top: 358px;
+  left: 678px;
+  border-radius: 25px;
+  border: 1px solid #000000;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    ), linear-gradient(223deg, rgba(43, 43, 43, 1) 0%, rgba(0, 0, 0, 1) 100%),
+    linear-gradient(
+      0deg,
+      rgba(217, 217, 217, 1) 0%,
+      rgba(217, 217, 217, 1) 100%
+    );
+}
+
+.mining-box .mining-group-4 {
+  position: absolute;
+  width: 425px;
+  height: 322px;
+  top: 28px;
+  left: 51px;
+}
+
+.mining-box .mining-text-wrapper-7 {
+  position: absolute;
+  width: 337px;
+  top: 5px;
+  left: 80px;
+  font-weight: 700;
+  font-size: 28px;
+  font-family: "Montserrat", Helvetica;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-text-wrapper-8 {
+  position: absolute;
+  width: 394px;
+  top: 133px;
+  left: 0;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Montserrat", Helvetica;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-text-wrapper-9 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  text-shadow: 0px 0px 18px #ffa50080;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #ffa500;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-text-wrapper-10 {
+  position: absolute;
+  width: 309px;
+  top: 274px;
+  left: 0;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Montserrat", Helvetica;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-exam-pedia-yellow {
+  position: absolute;
+  width: 321px;
+  height: 323px;
+  top: 35px;
+  left: 562px;
+  object-fit: cover;
+}
+
+.mining-box .mining-overlap-wrapper {
+  position: absolute;
+  width: 664px;
+  height: 385px;
+  top: 358px;
+  left: 0;
+}
+
+.mining-box .mining-overlap {
+  position: relative;
+  width: 656px;
+  height: 385px;
+  border-radius: 25px;
+  border: 1px solid #000000;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    ), linear-gradient(223deg, rgba(43, 43, 43, 1) 0%, rgba(0, 0, 0, 1) 100%),
+    linear-gradient(
+      0deg,
+      rgba(217, 217, 217, 1) 0%,
+      rgba(217, 217, 217, 1) 100%
+    );
+}
+
+.mining-box .mining-overlap-2 {
+  position: absolute;
+  width: 597px;
+  height: 141px;
+  top: 0;
+  left: 47px;
+}
+
+.mining-box .mining-text-wrapper-11 {
+  position: absolute;
+  width: 337px;
+  top: 33px;
+  left: 76px;
+  font-weight: 700;
+  font-size: 28px;
+  font-family: "Montserrat", Helvetica;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-overlap-group-2 {
+  width: 597px;
+  height: 141px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.mining-box .mining-text-wrapper-12 {
+  position: absolute;
+  width: 480px;
+  top: 100px;
+  left: 0;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Montserrat", Helvetica;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-design {
+  position: absolute;
+  width: 130px;
+  height: 122px;
+  top: 10px;
+  left: 459px;
+  object-fit: cover;
+}
+
+.mining-box .mining-text-wrapper-13 {
+  top: 28px;
+  left: 0;
+  position: absolute;
+  text-shadow: 0px 0px 18px #ffa50080;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #ffa500;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-group-wrapper {
+  position: absolute;
+  width: 589px;
+  height: 160px;
+  top: 145px;
+  left: 32px;
+  border-radius: 15px;
+  border: 1px solid #000000;
+  background: linear-gradient(
+      270deg,
+      rgba(232, 232, 232, 1) 0%,
+      rgba(246, 246, 246, 1) 100%
+    ), linear-gradient(0deg, rgba(36, 36, 36, 1) 0%, rgba(36, 36, 36, 1) 100%);
+}
+
+.mining-box .mining-group-5 {
+  position: relative;
+  width: 482px;
+  height: 128px;
+  top: 16px;
+  left: 15px;
+}
+
+.mining-box .mining-text-wrapper-14 {
+  position: absolute;
+  width: 480px;
+  top: 0;
+  left: 0;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Montserrat", Helvetica;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-frame {
+  display: flex;
+  flex-direction: column;
+  width: 454px;
+  align-items: flex-start;
+  gap: 3px;
+  position: absolute;
+  top: 39px;
+  left: 0;
+  opacity: 0.7;
+}
+
+.mining-box .mining-frame-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.mining-box .mining-text-wrapper-15 {
+  position: relative;
+  width: fit-content;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-text-wrapper-16 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Montserrat", Helvetica;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-frame-3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.mining-box .mining-text-wrapper-17 {
+  position: absolute;
+  top: 326px;
+  left: 47px;
+  font-weight: 700;
+  font-size: 20px;
+  white-space: nowrap;
+  font-family: "Montserrat", Helvetica;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-div-wrapper {
+  position: absolute;
+  width: 687px;
+  height: 340px;
+  top: 0;
+  left: 939px;
+}
+
+.mining-box .mining-overlap-3 {
+  position: relative;
+  width: 681px;
+  height: 340px;
+  border-radius: 25px;
+  border: 1px solid #000000;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    ), linear-gradient(223deg, rgba(43, 43, 43, 1) 0%, rgba(0, 0, 0, 1) 100%),
+    linear-gradient(
+      0deg,
+      rgba(217, 217, 217, 1) 0%,
+      rgba(217, 217, 217, 1) 100%
+    );
+}
+
+.mining-box .mining-overlap-group-3 {
+  width: 642px;
+  height: 340px;
+  left: 39px;
+  position: absolute;
+  top: 0;
+}
+
+.mining-box .mining-mask-group {
+  position: absolute;
+  width: 362px;
+  height: 340px;
+  top: 0;
+  left: 280px;
+}
+
+.mining-box .mining-text-wrapper-18 {
+  position: absolute;
+  top: 31px;
+  left: 76px;
+  font-weight: 700;
+  font-size: 28px;
+  font-family: "Montserrat", Helvetica;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-text-wrapper-19 {
+  position: absolute;
+  width: 373px;
+  top: 199px;
+  left: 0;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Montserrat", Helvetica;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.mining-box .mining-text-wrapper-20 {
+  top: 26px;
+  left: 39px;
+  position: absolute;
+  text-shadow: 0px 0px 18px #ffa50080;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #ffa500;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}

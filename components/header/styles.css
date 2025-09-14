@@ -163,13 +163,13 @@ body {
   transform: translateY(-1rem);
 }
 
-.icon {
+.header-icon {
   position: relative;
   width: 42px;
   height: 42px;
 }
 
-.icon img {
+.header-icon img {
   width: 34px;
   height: 34px;
   position: absolute;
@@ -194,7 +194,7 @@ body {
   color: white;
 }
 
-.icon.phone img {
+.icon-phone img {
   width: 32px;
   height: 32px;
   top: 5px;

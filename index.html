@@ -1,179 +1,1047 @@
 <!DOCTYPE html>
-<html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cryptopapa Main</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../components/header/styles.css"> <!-- Оновлений шлях до стилів хедера -->
-  <link rel="stylesheet" href="main.css">
-</head>
-<body>
-  <!-- Хедер (залишається як є) -->
-  <header class="header">
-    <div class="header-top">
-      <img class="logo" src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/group-7.png" alt="Group">
-      <button class="nav-button">
-        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' class="menu-icon">
-          <path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/>
-      </svg>
-        <span class="button-text">Каталог</span>
-      </button>
-      <div class="search-container">
-        <input type="text" class="search-input" placeholder="Знайти товар">
-        <div class="search-icon"></div>
-      </div>
-      <div class="header-right">
-        <div class="icon cart">
-          <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/vector.svg" alt="Cart">
-          <div class="badge" style="background-color: #ff7800;">2</div>
-        </div>
-        <div class="icon favorites">
-          <img src="../../icons/heart.jpg" alt="Favorites">
-          <div class="badge" style="background-color: #d93333;">2</div>
-        </div>
-        <div class="icon phone">
-          <img src="../../icons/phone.jpg" alt="Phone">
-        </div>
-        <div class="language-selector" tabindex="0">
-          <span class="language-text">UA</span>
-          <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M7 10l5 5 5-5z"/>
-          </svg>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">Українська</a>
-            <a href="#" class="dropdown-item">Русский</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <nav class="header-nav">
-      <ul class="nav-list">
-        <li class="nav-item active"><a href="#">Головна</a></li>
-        <li class="nav-item"><a href="#">Обладнання</a></li>
-        <li class="nav-item"><a href="#">Криптокотли</a></li>
-        <li class="nav-item"><a href="#">Сонячні станції</a></li>
-        <li class="nav-item"><a href="#">Про компанію</a></li>
-        <li class="nav-item"><a href="#">Прошивка</a></li>
-        <li class="nav-item"><a href="#">Контакти</a></li>
-      </ul>
-    </nav>
-  </header>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./components/header/styles.css" />
+    <style>
+        /* Стили для інтерактивних елементів */
+        .nav-item,
+        .group-26,
+        .group-27,
+        .group-28,
+        .group-29,
+        .text-wrapper-44 {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        }
 
-  <!-- Основний контент -->
-  <main class="main-content">
-    <!-- Hero Section з фоновим зображенням -->
-    <section class="hero-section">
-      <div class="hero-background">
-        <img src="../../images/banner.jpg" alt="Banner" class="hero-bg-image">
-        <div class="hero-overlay"></div>
-      </div>
-      <div class="hero-content">
-        <div class="promo-text">
-          <h2 class="promo-subtitle">СУПЕР ЦІНА</h2>
-          <h1 class="promo-title">ПОЧНИ ЗАРОБЛЯТИ НА МАЙНІНГУ КРИПТОВАЛЮТИ ВЖЕ СЬОГОДНІ!</h1>
-          <p class="promo-description">Зʼявжіться з нашим менеджером, щоб дізнатися всі деталі</p>
-        </div>
-        <div class="hero-cta">
-          <button class="telegram-button">
-            <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/ic-baseline-telegram.svg" alt="Telegram" class="telegram-icon">
-            <span>Написати в Telegram</span>
-          </button>
-          <button class="social-button viber">
-            <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/basil-viber-solid.svg" alt="Viber">
-          </button>
-          <button class="social-button whatsapp">
-            <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/mingcute-whatsapp-fill.svg" alt="WhatsApp">
-          </button>
-        </div>
-      </div>
-    </section>
+        /* Ефект при наведенні */
+        .nav-item:hover,
+        .group-26:hover,
+        .group-27:hover,
+        .group-28:hover,
+        .group-29:hover,
+        .text-wrapper-44:hover {
+        transform: scale(1.05);
+        color: #ffa500;
+        text-shadow: 0 0 0.5vw #ffa50080;
+        }
 
-    <!-- Cart Popup -->
-    <div class="cart-popup">
-      <div class="cart-card">
-        <div class="cart-header">
-          <h2>Кошик</h2>
-          <span>1 товар</span>
-          <button class="close-cart">×</button>
-        </div>
-        <div class="cart-items">
-          <div class="cart-item">
-            <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/rectangle-93.svg" alt="Bitmain Antminer L9">
-            <div class="item-info">
-              <h3>Bitmain Antminer L9 Scrypt 15 Gh</h3>
-              <p class="item-price">9000$</p>
-              <button class="go-to-item">Перейти до товару <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
-              <div class="quantity-control">
-                <button class="qty-btn minus">-</button>
-                <span class="qty">1</span>
-                <button class="qty-btn plus">+</button>
+        /* Ефект при натисканні */
+        .nav-item:active,
+        .group-26:active,
+        .group-27:active,
+        .group-28:active,
+        .group-29:active,
+        .text-wrapper-44:active {
+        transform: scale(0.95);
+        opacity: 0.8;
+        }
+
+        /* Стили для текстових полів форми */
+        .frame-21 input {
+        width: 100%;
+        max-width: 300px;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5vw;
+        font-family: "Montserrat", Helvetica;
+        font-size: 1rem;
+        outline: none;
+        transition: border-color 0.3s ease;
+        }
+
+        .frame-21 input:focus {
+        border-color: #ffa500;
+        box-shadow: 0 0 0.5vw #ffa50080;
+        }
+
+        .input-error {
+        border-color: red !important;
+        }
+
+        /* Стили для кнопок "Купити" та "Отримати консультацію" */
+        .group-wrapper:hover,
+        .group-100:hover,
+        .group-39:hover,
+        .group-57:hover {
+        cursor: pointer;
+        opacity: 0.9;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+        }
+
+        .group-wrapper,
+        .group-100,
+        .group-39,
+        .group-57 {
+        transition: all 0.3s ease;
+        }
+
+        .frame-4 .text-wrapper-11:hover,
+        .frame-4 .text-wrapper-12:hover,
+        .frame-4 .text-wrapper-13:hover,
+        .frame-6 .text-wrapper-11:hover,
+        .frame-6 .text-wrapper-12:hover,
+        .frame-6 .text-wrapper-14:hover {
+        transform: scale(1.05);
+        color: #ffa500;
+        text-shadow: 0 0 0.5vw #ffa50080;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        }
+
+        .frame-4 .text-wrapper-11,
+        .frame-4 .text-wrapper-12,
+        .frame-4 .text-wrapper-13,
+        .frame-6 .text-wrapper-11,
+        .frame-6 .text-wrapper-12,
+        .frame-6 .text-wrapper-14 {
+        transition: all 0.3s ease;
+        }
+
+        .frame-4 .text-wrapper-11:active,
+        .frame-4 .text-wrapper-12:active,
+        .frame-4 .text-wrapper-13:active,
+        .frame-6 .text-wrapper-11:active,
+        .frame-6 .text-wrapper-12:active,
+        .frame-6 .text-wrapper-14:active {
+        transform: scale(0.95);
+        opacity: 0.8;
+        }
+
+        .frame-4 .text-wrapper-11,
+        .frame-4 .text-wrapper-12,
+        .frame-4 .text-wrapper-13,
+        .frame-6 .text-wrapper-11,
+        .frame-6 .text-wrapper-12,
+        .frame-6 .text-wrapper-14 {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        }
+
+        .frame-4 .text-wrapper-11:hover,
+        .frame-4 .text-wrapper-12:hover,
+        .frame-4 .text-wrapper-13:hover,
+        .frame-6 .text-wrapper-11:hover,
+        .frame-6 .text-wrapper-12:hover,
+        .frame-6 .text-wrapper-14:hover {
+        transform: scale(1.05);
+        color: #ffa500;
+        text-shadow: 0 0 0.5vw #ffa50080;
+        cursor: pointer;
+        }
+
+        .frame-4 .text-wrapper-11:active,
+        .frame-4 .text-wrapper-12:active,
+        .frame-4 .text-wrapper-13:active,
+        .frame-6 .text-wrapper-11:active,
+        .frame-6 .text-wrapper-12:active,
+        .frame-6 .text-wrapper-14:active {
+        transform: scale(0.95);
+        opacity: 0.8;
+        }
+
+        /* Адаптивність */
+        @media screen and (max-width: 768px) {
+            .nav-item,
+            .group-26,
+            .group-27,
+            .group-28,
+            .group-29,
+            .text-wrapper-44 {
+                font-size: 0.9rem;
+            }
+
+            .frame-21 input {
+                font-size: 0.9rem;
+                padding: 0.4rem;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="screen">
+      <div class="div">
+        <div class="overlap">
+          <div class="rectangle"></div>
+          <img class="image" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/------.svg" />
+          <div class="view">
+            <div class="group">
+              <div class="text-wrapper">СУПЕР ЦІНА</div>
+              <p class="p">ПОЧНИ ЗАРОБЛЯТИ НА МАЙНІНГУ КРИПТОВАЛЮТИ ВЖЕ СЬОГОДНІ!</p>
+            </div>
+            <div class="group-2">
+              <p class="text-wrapper-2">Зʼявжіться з нашим менеджером, щоб дізнатися всі деталі</p>
+              <div class="frame">
+                <div class="group-wrapper" onclick="openTelegram()">
+                  <div class="group-3">
+                    <div class="text-wrapper-3">Написати в Telegram</div>
+                    <img
+                      class="ic-baseline-telegram"
+                      src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/ic-baseline-telegram.svg"
+                    />
+                  </div>
+                </div>
+                <img class="img" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/basil-viber-solid.svg" onclick="openViber()" />
+                <img class="img" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/mingcute-whatsapp-fill.svg" onclick="openWhatsApp()" />
               </div>
             </div>
           </div>
-          <!-- Додатковий елемент -->
-          <div class="cart-item">
-            <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/rectangle-93.svg" alt="Bitmain Antminer L9">
-            <div class="item-info">
-              <h3>Bitmain Antminer L9 Scrypt 15 Gh</h3>
-              <p class="item-price">9000$</p>
-              <button class="go-to-item">Перейти до товару <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
-              <div class="quantity-control">
-                <button class="qty-btn minus">-</button>
-                <span class="qty">1</span>
-                <button class="qty-btn plus">+</button>
+          <div class="frame-wrapper">
+            <div class="frame-2">
+              <div class="frame-3">
+                <div class="text-wrapper-4">5 рокiв</div>
+                <div class="text-wrapper-5">На ринку<br />в Україні</div>
+              </div>
+              <img class="line" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-6.svg" />
+              <div class="frame-3">
+                <div class="text-wrapper-6">1000+</div>
+                <div class="text-wrapper-5">Довольних<br />клієнтів</div>
+              </div>
+              <img class="line" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-6.svg" />
+              <div class="frame-3">
+                <div class="text-wrapper-7">100%</div>
+                <div class="text-wrapper-8">Гарантія<br />безпеки</div>
+              </div>
+              <img class="line" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-6.svg" />
+              <div class="group-4">
+                <div class="text-wrapper-9">Тех. підтримка<br />24 на 7</div>
+                <img
+                  class="img-2"
+                  src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/tech-support-number---iconsvg-co.svg"
+                />
+              </div>
+              <img class="line" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-6.svg" />
+              <div class="group-5">
+                <div class="text-wrapper-9">Прямі<br />Поставки</div>
+                <img
+                  class="img-2"
+                  src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/box-up-your-things---iconsvg-co.svg"
+                />
               </div>
             </div>
           </div>
         </div>
-        <div class="cart-footer">
-          <div class="total-price">
-            <span>Разом: </span>
-            <span>18 000$</span>
+        <div class="overlap-wrapper">
+          <div class="overlap-group">
+            <div class="ellipse"></div>
+            <div class="group-6">
+              <img class="group-7" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/group-338.png" />
+              <div class="frame-4">
+                <div class="text-wrapper-10">Меню сайта</div>
+                <div class="rectangle-2"></div>
+                <div class="frame-5">
+                  <div class="text-wrapper-11" onclick="navigate('Головна')">Головна</div>
+                  <div class="text-wrapper-12" onclick="navigate('Обладнання')">Обладнання</div>
+                  <div class="text-wrapper-12" onclick="navigate('Криптокотли')">Криптокотли</div>
+                  <div class="text-wrapper-12" onclick="navigate('Сонячні станції')">Сонячні станції</div>
+                  <div class="text-wrapper-12" onclick="navigate('Про компанію')">Про компанію</div>
+                  <div class="text-wrapper-13" onclick="navigate('Прошивка')">Прошивка</div>
+                </div>
+              </div>
+              <div class="frame-6">
+                <div class="text-wrapper-10">Про компанію</div>
+                <div class="rectangle-2"></div>
+                <div class="frame-5">
+                  <div class="text-wrapper-11" onclick="navigate('Про нас')">Про нас</div>
+                  <div class="text-wrapper-12" onclick="navigate('Контакти')">Контакти</div>
+                  <div class="text-wrapper-14" onclick="navigate('Політика конфіденційності')">Політика<br />конфіденційності</div>
+                </div>
+              </div>
+              <div class="div-wrapper">
+                <div class="group-8">
+                  <div class="frame-7">
+                    <div class="frame-8">
+                      <img class="img-3" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/ic-baseline-telegram-1.svg" onclick="openTelegram()" />
+                      <div class="text-wrapper-15">Telegram</div>
+                    </div>
+                    <img class="line" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-6.svg" />
+                    <div class="frame-9">
+                      <img class="img-3" src="./images/youtube.jpg" onclick="openYouTube()" />
+                      <div class="text-wrapper-15">YouTube</div>
+                    </div>
+                    <img class="line" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-6.svg" />
+                    <div class="frame-9">
+                      <img class="img-3" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/ic-baseline-tiktok.svg" onclick="openTikTok()" />
+                      <div class="text-wrapper-15">TikTok</div>
+                    </div>
+                    <img class="line" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-6.svg" />
+                    <div class="frame-10">
+                      <img class="img-3" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/basil-viber-solid-1.svg" onclick="openViber()" />
+                      <div class="text-wrapper-15">Viber</div>
+                    </div>
+                    <img class="line" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-6.svg" />
+                    <div class="frame-9">
+                      <img class="img-3" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/mingcute-whatsapp-fill-1.svg" onclick="openWhatsApp()" />
+                      <div class="text-wrapper-15">WhatsApp</div>
+                    </div>
+                  </div>
+                  <div class="text-wrapper-16">Наші соцмережі:</div>
+                </div>
+              </div>
+              <div class="group-9">
+                <div class="group-10">
+                <div class="group-11">
+                    <input type="text" class="search-input" placeholder="Знайти товар" />
+                    <img
+                    class="material-symbols"
+                    src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/material-symbols-search-rounded.svg"
+                    />
+                </div>
+                </div>
+                <div class="group-12">
+                  <div class="text-wrapper-18">+38 073 553 7777</div>
+                  <div class="group-13">
+                    <div class="group-14">
+                      <div class="ellipse-2"></div>
+                      <div class="text-wrapper-19">Цілодобово, без вихідних</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group-15">
+                  <p class="element">Україна, Київ, вул.<br />Харківське шоссе 188</p>
+                  <div class="overlap-group-wrapper">
+                    <div class="overlap-group-2">
+                      <div class="rectangle-3"></div>
+                      <div class="group-16"><div class="text-wrapper-20">Центральний офіс</div></div>
+                    </div>
+                  </div>
+                </div>
+                <img class="line-2" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-10.svg" />
+              </div>
+            </div>
+            <img class="mask-group" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/mask-group.png" />
           </div>
-          <button class="checkout-btn">Оформити замовлення</button>
         </div>
+        <div class="view-2">
+          <div class="text-wrapper-21">БАГАТО ВІДЕО ДЛЯ НОВАЧКІВ</div>
+          <img class="group-17" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/group-351.png" />
+          <p class="text-wrapper-22">По налаштування майнінг ферм від нашої компанїюії CRYPTOPAPA</p>
+          <div class="overlap-2">
+            <div class="group-18">
+              <div class="group-19">
+                <div class="group-20">
+                  <img class="mdi-youtube" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/mdi-youtube-1.svg" onclick="openYouTube()" />
+                  <div class="text-wrapper-23">YouTube</div>
+                </div>
+              </div>
+              <div class="group-21">
+                <div class="group-22">
+                  <img class="mdi-youtube" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/mdi-youtube.svg" onclick="openTikTok()" />
+                  <div class="text-wrapper-23">TikTok</div>
+                </div>
+              </div>
+            </div>
+            <img class="group-23" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/group-354.png" />
+          </div>
+        </div>
+        <div class="view-3">
+          <div class="overlap-3">
+            <div class="group-24">
+              <img class="phone" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/phone-1.png" />
+              <div class="group-25">
+                <div class="frame-11">
+                  <div class="group-26" onclick="openTelegram()">
+                    <div class="overlap-group-3"><div class="text-wrapper-24">Telegram</div></div>
+                  </div>
+                  <div class="group-27" onclick="openYouTube()">
+                    <div class="overlap-group-3"><div class="text-wrapper-25">YouTube</div></div>
+                  </div>
+                  <div class="group-27" onclick="openTikTok()">
+                    <div class="overlap-group-3"><div class="text-wrapper-26">TikTok</div></div>
+                  </div>
+                  <div class="group-27" onclick="showPriceList()">
+                    <div class="overlap-group-3"><div class="text-wrapper-27">Прайс</div></div>
+                  </div>
+                  <div class="group-28" onclick="openCalculator()">
+                    <div class="overlap-group-3"><div class="text-wrapper-28">Калькулятор</div></div>
+                  </div>
+                </div>
+                <div class="frame-12">
+                  <div class="group-29" onclick="openTelegram()">
+                    <div class="text-wrapper-29">Телеграм канал</div>
+                    <div class="text-wrapper-30">CRYPTOPAPA_UA</div>
+                    <img
+                      class="ic-baseline-telegram-2"
+                      src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/ic-baseline-telegram.svg"
+                      onclick="openTelegram()"
+                    />
+                  </div>
+                  <div class="group-30">
+                    <p class="text-wrapper-31">Тут багато лайв-контенту, та вигідних пропозицій</p>
+                    <div class="group-31">
+                      <div class="overlap-group-4">
+                        <a class="telegram-link" href="https://t.me/CRYPTOPAPA_UA" target="_blank">
+                            <div class="text-wrapper-32">Перейти в Телеграм</div>
+                            <div class="rectangle-4"></div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="coin" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/coin-6.png" />
+            <img class="coin-2" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/coin-4.png" />
+          </div>
+        </div>
+        <div class="view-4">
+          <div class="overlap-4">
+            <div class="rectangle-5"></div>
+            <div class="group-32">
+              <div class="group-33">
+                <div class="group-34">
+                  <div class="overlap-group-5">
+                    <div class="text-wrapper-33">До Прошивки</div>
+                    <div class="text-wrapper-34">200$</div>
+                  </div>
+                </div>
+              </div>
+              <div class="group-35">
+                <div class="group-34">
+                  <div class="overlap-group-5">
+                    <div class="text-wrapper-35">Після Прошивки</div>
+                    <div class="text-wrapper-36">300$</div>
+                  </div>
+                </div>
+              </div>
+              <img class="vector" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/vector-2.svg" />
+            </div>
+            <div class="rectangle-6"></div>
+            <img class="rendering-object" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/rendering-object-2.png" />
+            <div class="group-36">
+              <div class="frame-13">
+                <p class="div-2">
+                  <span class="span">ПРОШИВКА<br /></span> <span class="text-wrapper-37">КРИПТОФЕРМИ</span>
+                </p>
+                <p class="text-wrapper-38">
+                  За допомогою нашої прошивки CRYPTOPAPA, зможемо збільшити ваш прибуток на 30%
+                </p>
+              </div>
+              <div class="frame-14">
+                <div class="frame-3">
+                  <img class="img-3" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/lineicons-cash-app.svg" />
+                  <div class="element-2">Приріст прибутку<br />до 30%</div>
+                </div>
+                <img class="line" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-6.svg" />
+                <div class="frame-3">
+                  <img class="img-3" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/heroicons-cpu-chip-20-solid.svg" />
+                  <div class="text-wrapper-39">Автотюн<br />Чіпів</div>
+                </div>
+                <img class="line" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-6.svg" />
+                <div class="frame-3">
+                  <img class="img-3" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/solar-fire-bold.svg" />
+                  <div class="text-wrapper-39">Безпека<br />від перегріву</div>
+                </div>
+              </div>
+              <div class="group-37">
+                <div class="group-38">
+                  <div class="group-39" onclick="requestConsultation()">
+                    <div class="group-40"><div class="text-wrapper-40">Отримати консультацію</div></div>
+                  </div>
+                </div>
+                <p class="text-wrapper-41">Для більш детальної інформації залишайте заявку на консультацію</p>
+                <img class="group-41" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/group-315.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="view-5">
+          <div class="overlap-5">
+            <div class="group-42">
+              <div class="overlap-group-6">
+                <div class="ellipse-wrapper"><div class="ellipse-3"></div></div>
+                <img class="element-3" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/-------1.png" />
+              </div>
+            </div>
+            <div class="group-43">
+              <div class="group-44">
+                <p class="div-3">
+                  <span class="span">МАЙНІНГ КРИПТОВАЛЮТИ<br /></span>
+                  <span class="text-wrapper-42">НА СОНЯЧНИХ ПАНЕЛЯХ</span>
+                </p>
+                <p class="text-wrapper-43">
+                  Економте на електроенергії та додатково заробляйте біткоіни! Майнінг на сонячних панелях — це
+                  екологічний та вигідний спосіб добувати біткоїн та інші криптовалюти.<br /><br />Використовуйте
+                  безкоштовну енергію сонця, щоб знизити витрати та підвищити прибуток. Наші рішення допоможуть
+                  налаштувати ефективний майнінг із мінімальними затратами.
+                </p>
+              </div>
+              <div class="group-45">
+                <div class="group-46">
+                  <div class="group-39" onclick="requestConsultation()">
+                    <div class="group-40"><div class="text-wrapper-40">Отримати консультацію</div></div>
+                  </div>
+                </div>
+                <div class="group-47">
+                  <div class="text-wrapper-44" onclick="showDetails()">Докладніше</div>
+                  <img class="line-3" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-11.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="element-4">
+          <div class="group-48">
+            <div class="element-5">ТОП 5 КРИПТОФЕРМ</div>
+            <div class="group-49">
+              <div class="group-50">
+                <div class="text-wrapper-45">СЕРПЕНЬ</div>
+                <img
+                  class="material-symbols"
+                  src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/material-symbols-crown.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <img class="line-4" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-9-1.svg" />
+          <div class="group-51">
+            <div class="group-52">
+              <div class="overlap-group-7">
+                <img class="image-2" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/image-1-1.png" />
+                <div class="group-53">
+                  <div class="group-54">
+                    <div class="group-55">
+                      <div class="group-56">
+                        <div class="group-57" onclick="buyProduct('Bitmain Antminer L9 Scrypt 15 Gh')">
+                          <div class="text-wrapper-46">Купити</div>
+                          <img class="buy" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/icons8-buy.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <img class="group-58" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/group-238.png" />
+                  </div>
+                  <div class="group-59">
+                    <div class="text-wrapper-47">9000$</div>
+                    <div class="group-60">
+                      <div class="text-wrapper-48">В наявності</div>
+                      <div class="ellipse-4"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="bitmain-antminer">Bitmain Antminer<br />L9 Scrypt 15 Gh</p>
+                <div class="overlap-group-8">
+                  <div class="rectangle-7"></div>
+                  <div class="group-61">
+                    <div class="group-62">
+                      <div class="text-wrapper-49">В місяць</div>
+                      <div class="text-wrapper-50">715$</div>
+                    </div>
+                  </div>
+                  <div class="group-63">
+                    <div class="group-64">
+                      <div class="text-wrapper-51">кВт/Год</div>
+                      <div class="text-wrapper-52">3.6</div>
+                    </div>
+                    <div class="group-65">
+                      <div class="text-wrapper-51">Gh/s</div>
+                      <div class="text-wrapper-53">16</div>
+                    </div>
+                    <img class="line-5" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-8.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="group-66">
+              <div class="overlap-group-7">
+                <div class="overlap-group-9">
+                  <div class="group-67">
+                    <div class="group-57" onclick="buyProduct('Bitmain Antminer S21+ 225 Th')">
+                      <div class="text-wrapper-46">Купити</div>
+                      <img class="buy" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/icons8-buy.svg" />
+                    </div>
+                  </div>
+                  <div class="group-68">
+                    <img class="group-69" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/group-240.png" />
+                    <div class="group-70">
+                      <div class="text-wrapper-47">4000$</div>
+                      <div class="group-71">
+                        <div class="text-wrapper-54">Товар закінчується</div>
+                        <div class="ellipse-5"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img class="image-2" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/image-1-1.png" />
+                <div class="bitmain-antminer">Bitmain Antminer<br />S21+ 225 Th</div>
+                <div class="overlap-group-8">
+                  <div class="rectangle-7"></div>
+                  <div class="group-61">
+                    <div class="group-62">
+                      <div class="text-wrapper-49">В місяць</div>
+                      <div class="text-wrapper-55">400$</div>
+                    </div>
+                  </div>
+                  <div class="group-63">
+                    <div class="group-64">
+                      <div class="text-wrapper-51">кВт/Год</div>
+                      <div class="text-wrapper-52">3.6</div>
+                    </div>
+                    <div class="group-72">
+                      <div class="text-wrapper-56">Th/s</div>
+                      <div class="text-wrapper-57">225</div>
+                    </div>
+                    <img class="line-5" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-8.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="group-73">
+              <div class="overlap-group-7">
+                <div class="overlap-group-9">
+                  <div class="group-74">
+                    <div class="group-57" onclick="buyProduct('Bitmain Antminer S21+ HYDRO 338 Th')">
+                      <div class="text-wrapper-46">Купити</div>
+                      <img class="buy" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/icons8-buy.svg" />
+                    </div>
+                  </div>
+                  <div class="group-68">
+                    <img class="group-69" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/group-240-1.png" />
+                    <div class="group-70">
+                      <div class="text-wrapper-47">6200$</div>
+                      <div class="group-75">
+                        <div class="text-wrapper-58">Немає в наявності</div>
+                        <div class="ellipse-6"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img class="image-3" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/image-1-4.png" />
+                <p class="bitmain-antminer">Bitmain Antminer<br />S21+ HYDRO 338 Th</p>
+                <div class="overlap-group-8">
+                  <div class="rectangle-7"></div>
+                  <div class="group-61">
+                    <div class="group-62">
+                      <div class="text-wrapper-49">В місяць</div>
+                      <div class="text-wrapper-59">605$</div>
+                    </div>
+                  </div>
+                  <div class="group-76">
+                    <div class="group-64">
+                      <div class="text-wrapper-51">кВт/Год</div>
+                      <div class="text-wrapper-52">3.6</div>
+                    </div>
+                    <div class="group-77">
+                      <div class="text-wrapper-56">Th/s</div>
+                      <div class="text-wrapper-57">338</div>
+                    </div>
+                    <img class="line-5" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-8.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="group-78">
+              <div class="overlap-group-7">
+                <div class="overlap-group-9">
+                  <div class="group-74">
+                    <div class="group-57" onclick="buyProduct('Bitmain Antminer S21+ HYDRO 395 Th')">
+                      <div class="text-wrapper-46">Купити</div>
+                      <img class="buy" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/icons8-buy.svg" />
+                    </div>
+                  </div>
+                  <div class="group-68">
+                    <img class="group-69" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/group-240-2.png" />
+                    <div class="group-70">
+                      <div class="text-wrapper-47">7200$</div>
+                      <div class="group-60">
+                        <div class="text-wrapper-48">В наявності</div>
+                        <div class="ellipse-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img class="image-3" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/image-1-4.png" />
+                <p class="bitmain-antminer">Bitmain Antminer<br />S21+ HYDRO 395 Th</p>
+                <div class="overlap-group-8">
+                  <div class="rectangle-7"></div>
+                  <div class="group-61">
+                    <div class="group-62">
+                      <div class="text-wrapper-49">В місяць</div>
+                      <div class="text-wrapper-59">660$</div>
+                    </div>
+                  </div>
+                  <div class="group-76">
+                    <div class="group-64">
+                      <div class="text-wrapper-51">кВт/Год</div>
+                      <div class="text-wrapper-52">3.6</div>
+                    </div>
+                    <div class="group-77">
+                      <div class="text-wrapper-56">Th/s</div>
+                      <div class="text-wrapper-57">395</div>
+                    </div>
+                    <img class="line-5" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-8.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="group-79">
+              <div class="overlap-group-7">
+                <div class="overlap-group-9">
+                  <div class="group-74">
+                    <div class="group-57" onclick="buyProduct('Bitmain Antminer S21+ HYDRO 473 Th')">
+                      <div class="text-wrapper-46">Купити</div>
+                      <img class="buy" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/icons8-buy.svg" />
+                    </div>
+                  </div>
+                  <div class="group-68">
+                    <img class="group-69" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/group-240-3.png" />
+                    <div class="group-70">
+                      <div class="text-wrapper-47">11000$</div>
+                      <div class="group-60">
+                        <div class="text-wrapper-48">В наявності</div>
+                        <div class="ellipse-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img class="image-3" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/image-1-4.png" />
+                <p class="bitmain-antminer">Bitmain Antminer<br />S21+ HYDRO 473 Th</p>
+                <div class="overlap-group-8">
+                  <div class="rectangle-7"></div>
+                  <div class="group-61">
+                    <div class="group-62">
+                      <div class="text-wrapper-49">В місяць</div>
+                      <div class="text-wrapper-55">800$</div>
+                    </div>
+                  </div>
+                  <div class="group-76">
+                    <div class="group-64">
+                      <div class="text-wrapper-51">кВт/Год</div>
+                      <div class="text-wrapper-52">3.6</div>
+                    </div>
+                    <div class="group-80">
+                      <div class="text-wrapper-60">Th/s</div>
+                      <div class="text-wrapper-57">473</div>
+                    </div>
+                    <img class="line-5" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-8.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="view-6">
+          <div class="group-81">
+            <div class="group-82">
+              <p class="div-4">
+                <span class="span">ЯК ПОЧАТИ</span>
+                <span class="text-wrapper-61">&nbsp;</span>
+                <span class="text-wrapper-37">ЗАРОБЛЯТИ</span>
+                <span class="text-wrapper-61">&nbsp;</span>
+                <span class="span">НА </span>
+                <span class="text-wrapper-37">МАЙНІНГУ</span>
+                <span class="text-wrapper-61">&nbsp;</span>
+                <span class="span">КРИПТОВАЛЮТИ?</span>
+              </p>
+              <p class="text-wrapper-62">Ось 5 простих кроків, щоб почати заробляти на майнінгу криптовалюти:</p>
+            </div>
+          </div>
+          <div class="group-83">
+            <div class="group-84">
+              <div class="overlap-group-10">
+                <div class="text-wrapper-63">Консультація з нашим менеджером</div>
+                <p class="text-wrapper-64">
+                  Зверніться до нашого менеджера на сайті, щоб отримати поради щодо вибору криптовалюти та стратегії
+                  майнінгу.
+                </p>
+                <div class="text-wrapper-65">01</div>
+                <img class="icon" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/icon.png" />
+              </div>
+            </div>
+            <div class="group-85">
+              <div class="group-86">
+                <div class="text-wrapper-66">Запустіть майнінг</div>
+                <p class="text-wrapper-67">
+                  Купіть обладнання, створіть криптогаманець (є відео на нашому ютуб), підключіть кабель живлення та
+                  інтернет, налаштуйте (є відео на нашому ютуб або зверніться до нас).
+                </p>
+                <div class="text-wrapper-68">04</div>
+                <p class="text-wrapper-69">І все, отримуйте свою першу крипту на гаманець!</p>
+              </div>
+              <img
+                class="exam-pedia-yellow"
+                src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/exam-pedia-3d-yellow-balck-1.png"
+              />
+            </div>
+            <div class="group-87">
+              <div class="overlap-6">
+                <div class="overlap-7">
+                  <div class="text-wrapper-70">Оцініть прибуток</div>
+                  <div class="overlap-group-11">
+                    <p class="text-wrapper-71">Розрахуйте потенційний дохід від майнінгу.</p>
+                    <img class="design" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/design1-1.png" />
+                  </div>
+                  <div class="text-wrapper-72">03</div>
+                </div>
+                <div class="group-88">
+                  <div class="group-89">
+                    <div class="text-wrapper-73">Приклад:</div>
+                    <div class="frame-15">
+                      <div class="frame-16">
+                        <div class="text-wrapper-74">ANTMINER L9 16Gh</div>
+                        <div class="text-wrapper-75">/</div>
+                        <div class="text-wrapper-74">Ціна: 6500$</div>
+                        <div class="text-wrapper-75">/</div>
+                        <div class="text-wrapper-74">Прибуток на місяць: 720$</div>
+                        <div class="text-wrapper-75">/</div>
+                      </div>
+                      <div class="frame-17">
+                        <p class="text-wrapper-74">
+                          Cпоживання: 4 кВт/год х 24год = 88 кВт в день , 88 х 30 днів = 2640 кВт
+                        </p>
+                        <div class="text-wrapper-75">/</div>
+                      </div>
+                      <div class="frame-16">
+                        <p class="text-wrapper-74">Ціна електроенергії (Тариф День/Ніч) = 3.6 грн/Квт</p>
+                        <div class="text-wrapper-75">/</div>
+                      </div>
+                      <div class="frame-16">
+                        <p class="text-wrapper-74">Витрати на місяць: 2640 кВт/Міс. х 3.6 грн/кВт = 9504 грн (230$)</p>
+                        <div class="text-wrapper-75">/</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-wrapper-76">Чистий прибуток: 720$ - 230$ = 490$ в міс.</p>
+              </div>
+            </div>
+            <div class="group-90">
+              <div class="overlap-8">
+                <div class="overlap-group-12">
+                  <img class="mask-group-2" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/mask-group-2.png" />
+                  <div class="text-wrapper-77">Виберіть обладнання</div>
+                  <p class="text-wrapper-78">
+                    На нашому сайті ознайомтесь із цінами на обладнання, подивіться який прибуток на місяць, та яке
+                    споживання на годину.
+                  </p>
+                </div>
+                <div class="text-wrapper-79">02</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="view-7">
+          <div class="overlap-9">
+            <div class="group-91">
+              <div class="group-92">
+                <div class="overlap-10">
+                  <div class="group-93">
+                    <div class="group-94">
+                      <p class="div-5">
+                        <span class="span">ПРОСТО ЗАРАЗ </span> <span class="text-wrapper-37">ЗАЛИШТЕ ЗАЯВКУ</span>
+                      </p>
+                      <p class="element-6">
+                        <span class="text-wrapper-37">І вже через 1 хвилину,</span>
+                        <span class="span">
+                          дізнайтесь скільки зможете отримувати прибутку з майнінгу криптовалюти</span
+                        >
+                      </p>
+                    </div>
+                    <div class="group-95">
+                      <div class="text-wrapper-80">04</div>
+                      <p class="text-wrapper-81">Консультація з підключення та налаштування</p>
+                      <div class="text-wrapper-82">03</div>
+                      <div class="text-wrapper-83">Прорахунок прибутку</div>
+                      <div class="text-wrapper-84">02</div>
+                      <div class="text-wrapper-85">Оцінка вашої локації</div>
+                      <div class="text-wrapper-86">01</div>
+                      <div class="text-wrapper-87">Консультація з менеджером</div>
+                      <div class="rectangle-wrapper"><div class="rectangle-8"></div></div>
+                    </div>
+                  </div>
+                  <img
+                    class="rendering-object-2"
+                    src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/rendering-object-3.png"
+                  />
+                  <img
+                    class="rendering-object-3"
+                    src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/rendering-object-2-1.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="group-96">
+              <div class="group-97">
+                <div class="group-98">
+                  <div class="frame-18">
+                    <div class="frame-19">
+                      <div class="text-wrapper-88">Залишайте заявку</div>
+                      <div class="text-wrapper-89">Ми вам зателефонуємо</div>
+                    </div>
+                    <div class="frame-20">
+                      <div class="group-99">
+                        <div class="frame-21">
+                          <img class="img-4" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/ooui-user-avatar.svg" />
+                          <input type="text" class="name-input" placeholder="Ваше імʼя" />
+                        </div>
+                      </div>
+                      <div class="group-99">
+                        <div class="frame-21">
+                          <img class="img-4" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/mingcute-phone-fill.svg" />
+                          <input type="tel" class="phone-input" placeholder="Ваш номер телефону" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="group-100" onclick="submitForm()">
+                      <div class="overlap-group-13"><div class="text-wrapper-91">Відправити</div></div>
+                    </div>
+                    <img class="line-6" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/line-9.svg" />
+                    <div class="frame-22">
+                      <p class="text-wrapper-92">Або не чекайте пишіть нам одразу</p>
+                      <img class="frame-23" src="https://c.animaapp.com/mfjxmy5m4MAUWm/img/frame-351.svg" onclick="openTelegram()" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <header class="header">
+          <div class="header-top">
+            <img class="logo" src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/group-7.png" alt="Group" />
+            <button class="nav-button">
+              <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' class="menu-icon">
+                <path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/>
+              </svg>
+              <span class="button-text">Каталог</span>
+            </button>
+            <div class="search-container">
+              <input type="text" class="search-input" placeholder="Знайти товар" />
+              <div class="search-icon"></div>
+            </div>
+            <div class="header-right">
+              <div class="icon-cart header-icon">
+                <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/vector.svg" alt="Cart" />
+                <div class="badge" style="background-color: #ff7800;">2</div>
+              </div>
+              <div class="icon-favorites header-icon">
+                <img src="./icons/heart.jpg" alt="Favorites" />
+                <div class="badge" style="background-color: #d93333;">2</div>
+              </div>
+              <div class="icon-phone header-icon">
+                <img src="./icons/phone.jpg" alt="Phone" />
+              </div>
+              <div class="language-selector" tabindex="0">
+                <span class="language-text">UA</span>
+                <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M7 10l5 5 5-5z"/>
+                </svg>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Українська</a>
+                  <a href="#" class="dropdown-item">Русский</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li class="nav-item active" onclick="navigate('Головна')"><a href="#">Головна</a></li>
+              <li class="nav-item" onclick="navigate('Обладнання')"><a href="#">Обладнання</a></li>
+              <li class="nav-item" onclick="navigate('Криптокотли')"><a href="#">Криптокотли</a></li>
+              <li class="nav-item" onclick="navigate('Сонячні станції')"><a href="#">Сонячні станції</a></li>
+              <li class="nav-item" onclick="navigate('Про компанію')"><a href="#">Про компанію</a></li>
+              <li class="nav-item" onclick="navigate('Прошивка')"><a href="#">Прошивка</a></li>
+              <li class="nav-item" onclick="navigate('Контакти')"><a href="#">Контакти</a></li>
+            </ul>
+          </nav>
+        </header>
       </div>
     </div>
+    <script>
+      function openTelegram() {
+        window.open("https://t.me/CRYPTOPAPA_UA", "_blank");
+      }
 
-    <!-- Stats Section -->
-    <section class="stats-section">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-number">5 РОКІВ</div>
-          <p>На ринку<br>в Україні</p>
-        </div>
-        <div class="stat-separator"></div>
-        <div class="stat-item">
-          <div class="stat-number">1000+</div>
-          <p>Довольних<br>клієнтів</p>
-        </div>
-        <div class="stat-separator"></div>
-        <div class="stat-item">
-          <div class="stat-number">100%</div>
-          <p>Гарантія<br>безпеки</p>
-        </div>
-        <div class="stat-separator"></div>
-        <div class="stat-item icon-stat">
-          <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/tech-support-number---iconsvg-co.svg" alt="Tech Support">
-          <p>Тех. підтримка<br>24 на 7</p>
-        </div>
-        <div class="stat-separator"></div>
-        <div class="stat-item icon-stat">
-          <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/box-up-your-things---iconsvg-co.svg" alt="Direct Delivery">
-          <p>Прямі<br>Поставки</p>
-        </div>
-      </div>
-    </section>
-  </main>
+      function openYouTube() {
+        window.open("https://www.youtube.com", "_blank");
+      }
 
-  <script>
-    // JavaScript для дропдауна мов
-    const languageSelector = document.querySelector('.language-selector');
-    const dropdownMenu = document.querySelector('.dropdown-menu');
+      function openTikTok() {
+        window.open("https://www.tiktok.com", "_blank");
+      }
 
-    if (languageSelector && dropdownMenu) {
+      function openViber() {
+        window.open("viber://chat?number=%2B380735537777", "_blank");
+      }
+
+      function openWhatsApp() {
+        window.open("https://wa.me/380735537777", "_blank");
+      }
+
+      function requestConsultation() {
+        alert("Ваша заявка на консультацію відправлена! Менеджер зв'яжеться з вами найближчим часом.");
+      }
+
+      function buyProduct(productName) {
+        alert(`Ви обрали для покупки: ${productName}. Будь ласка, зв'яжіться з менеджером для оформлення замовлення.`);
+      }
+
+      function navigate(section) {
+        alert(`Перехід до розділу: ${section}`);
+      }
+
+      function showPriceList() {
+        alert("Відображення прайс-листу. Зверніться до менеджера для отримання деталей.");
+      }
+
+      function openCalculator() {
+        alert("Відкриття калькулятора прибутковості. Зверніться до менеджера для розрахунків.");
+      }
+
+      function showDetails() {
+        alert("Докладніше: Ознайомтесь із деталями на нашому сайті або зв'яжіться з менеджером.");
+      }
+
+      function submitForm() {
+        const nameInput = document.querySelector(".name-input");
+        const phoneInput = document.querySelector(".phone-input");
+        const phonePattern = /^\+?380[0-9]{9}$/;
+
+        if (!nameInput.value.trim()) {
+          nameInput.classList.add("input-error");
+          alert("Будь ласка, введіть ваше ім'я.");
+          return;
+        } else {
+          nameInput.classList.remove("input-error");
+        }
+
+        if (!phonePattern.test(phoneInput.value.trim())) {
+          phoneInput.classList.add("input-error");
+          alert("Будь ласка, введіть коректний номер телефону (+380XXXXXXXXX).");
+          return;
+        } else {
+          phoneInput.classList.remove("input-error");
+        }
+
+        alert(`Дякуємо, ${nameInput.value}! Ваша заявка відправлена. Ми зателефонуємо за номером ${phoneInput.value}.`);
+        nameInput.value = "";
+        phoneInput.value = "";
+      }
+
+      // Очищення плейсхолдерів при фокусі
+      document.querySelectorAll(".frame-21 input").forEach(input => {
+        input.addEventListener("focus", () => {
+          input.placeholder = "";
+        });
+        input.addEventListener("blur", () => {
+          if (!input.value) {
+            if (input.classList.contains("name-input")) {
+              input.placeholder = "Ваше імʼя";
+            } else if (input.classList.contains("phone-input")) {
+              input.placeholder = "Ваш номер телефону";
+            }
+          }
+        });
+      });
+
+      // Логіка для випадаючого меню вибору мови
+      const languageSelector = document.querySelector('.language-selector');
+      const dropdownMenu = document.querySelector('.dropdown-menu');
+
       languageSelector.addEventListener('click', (e) => {
         e.preventDefault();
         dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
@@ -184,31 +1052,6 @@
           dropdownMenu.style.display = 'none';
         }
       });
-    }
-
-    // Показати кошик при кліку на іконку кошика
-    const cartIcon = document.querySelector('.icon.cart');
-    const cartPopup = document.querySelector('.cart-popup');
-    if (cartIcon && cartPopup) {
-      cartIcon.addEventListener('click', (e) => {
-        e.stopPropagation();
-        cartPopup.style.display = 'block';
-      });
-    }
-
-    const closeCart = document.querySelector('.close-cart');
-    if (closeCart) {
-      closeCart.addEventListener('click', () => {
-        cartPopup.style.display = 'none';
-      });
-    }
-
-    // Закриття кошика при кліку поза ним
-    document.addEventListener('click', (e) => {
-      if (!cartPopup.contains(e.target) && cartPopup.style.display === 'block') {
-        cartPopup.style.display = 'none';
-      }
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>

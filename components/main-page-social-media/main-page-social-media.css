@@ -1,0 +1,308 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+.social-section {
+  width: 1620px;
+  margin: 0 auto;
+}
+
+.social-box {
+  position: relative;
+  width: 100%;
+  height: 455px;
+}
+
+.social-box .social-view {
+  position: relative;
+  width: 100%;
+  height: 455px;
+}
+
+.social-box .social-overlap {
+  height: 455px;
+  position: relative;
+  border-radius: 50px;
+  border: 1px solid #000000;
+}
+
+.social-box .social-group {
+  position: absolute;
+  width: 1620px;
+  height: 455px;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 161, 255, 1) 0%,
+      rgba(0, 221, 255, 1) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(217, 217, 217, 1) 0%,
+      rgba(217, 217, 217, 1) 100%
+    );
+}
+
+.social-box .social-phone {
+  position: absolute;
+  width: 510px;
+  height: 432px;
+  top: 23px;
+  left: 996px;
+}
+
+.social-box .social-content {
+  position: absolute;
+  width: 740px;
+  height: 342px;
+  top: 55px;
+  left: 55px;
+}
+
+.social-box .social-frame {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+
+.social-box .social-overlap-group-wrapper {
+  position: relative;
+  width: 142px;
+  height: 50px;
+}
+
+.social-box .social-overlap-group {
+  width: 140px;
+  height: 50px;
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 50px;
+  border: 1px solid #000000;
+}
+
+.social-box .social-text-wrapper {
+  position: absolute;
+  top: 15px;
+  left: 31px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.social-box .social-overlap-wrapper {
+  position: relative;
+  width: 142px;
+  height: 50px;
+  opacity: 0.7;
+}
+
+.social-box .social-text-wrapper-2 {
+  position: absolute;
+  top: 15px;
+  left: 34px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.social-box .social-text-wrapper-3 {
+  position: absolute;
+  top: 15px;
+  left: 42px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.social-box .social-text-wrapper-4 {
+  top: 15px;
+  left: 43px;
+  font-weight: 600;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  position: absolute;
+  font-family: "Montserrat", Helvetica;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.social-box .social-content-wrapper {
+  position: relative;
+  width: 142px;
+  height: 50px;
+  margin-right: -2.00px;
+  opacity: 0.7;
+}
+
+.social-box .social-text-wrapper-5 {
+  top: 15px;
+  left: 16px;
+  font-weight: 600;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  position: absolute;
+  font-family: "Montserrat", Helvetica;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.social-box .social-frame-2 {
+  display: flex;
+  flex-direction: column;
+  width: 585px;
+  align-items: flex-start;
+  gap: 38px;
+  top: 110px;
+  position: absolute;
+  left: 0;
+}
+
+.social-box .social-group-2 {
+  position: relative;
+  width: 448px;
+  height: 119px;
+}
+
+.social-box .social-text-wrapper-6 {
+  top: 8px;
+  left: 65px;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 28px;
+  position: absolute;
+  font-family: "Montserrat", Helvetica;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.social-box .social-text-wrapper-7 {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.social-box .social-ic-baseline-telegram {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+
+.social-box .social-group-3 {
+  position: relative;
+  width: 583px;
+  height: 75px;
+}
+
+.social-box .social-paragraph {
+  width: 286px;
+  top: 14px;
+  left: 0;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+  font-family: "Montserrat", Helvetica;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.social-box .social-group-4 {
+  position: absolute;
+  width: 282px;
+  height: 75px;
+  top: 0;
+  left: 301px;
+}
+
+.social-box .social-overlap-group-2 {
+  position: relative;
+  width: 280px;
+  height: 75px;
+  border-radius: 15px;
+  border: 1px solid #000000;
+}
+
+.social-box .social-text-wrapper-8 {
+  top: 26px;
+  left: 29px;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 20px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Montserrat", Helvetica;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.social-box .social-rectangle {
+  position: absolute;
+  width: 280px;
+  height: 75px;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  border: 2px solid;
+  border-color: #ffffff;
+}
+
+.social-box .social-coin {
+  width: 170px;
+  height: 169px;
+  top: 258px;
+  left: 916px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.social-box .social-coin-img {
+  width: 293px;
+  height: 292px;
+  top: 12px;
+  left: 1317px;
+  position: absolute;
+  object-fit: cover;
+}

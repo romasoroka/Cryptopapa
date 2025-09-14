@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptopapa Main</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./components/footer/footer.css">
+  <link rel="stylesheet" href="./components/header/styles.css">
+  <link rel="stylesheet" href="./components/group-wrapper-section/group-wrapper-section.css">
+  <link rel="stylesheet" href="./components/how-to-make-money-section/how-to-make-money-section.css">
+  <link rel="stylesheet" href="./components/main-page-social-media/main-page-social-media.css">
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <!-- Хедер (залишається як є) -->
+  <header class="header">
+    <div class="header-top">
+      <img class="logo" src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/group-7.png" alt="Group">
+      <button class="nav-button">
+        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' class="menu-icon">
+          <path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/>
+      </svg>
+        <span class="button-text">Каталог</span>
+      </button>
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Знайти товар">
+        <div class="search-icon"></div>
+      </div>
+      <div class="header-right">
+        <div class="icon cart">
+          <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/vector.svg" alt="Cart">
+          <div class="badge" style="background-color: #ff7800;">2</div>
+        </div>
+        <div class="icon favorites">
+          <img src="./icons/heart.jpg" alt="Favorites">
+          <div class="badge" style="background-color: #d93333;">2</div>
+        </div>
+        <div class="icon phone">
+          <img src="./icons/phone.jpg" alt="Phone">
+        </div>
+        <div class="language-selector" tabindex="0">
+          <span class="language-text">UA</span>
+          <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 10l5 5 5-5z"/>
+          </svg>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Українська</a>
+            <a href="#" class="dropdown-item">Русский</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li class="nav-item active"><a href="#">Головна</a></li>
+        <li class="nav-item"><a href="#">Обладнання</a></li>
+        <li class="nav-item"><a href="#">Криптокотли</a></li>
+        <li class="nav-item"><a href="#">Сонячні станції</a></li>
+        <li class="nav-item"><a href="#">Про компанію</a></li>
+        <li class="nav-item"><a href="#">Прошивка</a></li>
+        <li class="nav-item"><a href="#">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Основний контент -->
+  <main class="main-content">
+    <!-- Hero Section з фоновим зображенням -->
+    <section class="hero-section">
+      <div class="hero-background">
+        <img src="./images/banner.jpg" alt="Banner" class="hero-bg-image">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <div class="promo-text">
+          <h2 class="promo-subtitle">СУПЕР ЦІНА</h2>
+          <h1 class="promo-title">ПОЧНИ ЗАРОБЛЯТИ НА МАЙНІНГУ КРИПТОВАЛЮТИ ВЖЕ СЬОГОДНІ!</h1>
+          <p class="promo-description">Зʼявжіться з нашим менеджером, щоб дізнатися всі деталі</p>
+        </div>
+        <div class="hero-cta">
+          <button class="telegram-button">
+            <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/ic-baseline-telegram.svg" alt="Telegram" class="telegram-icon">
+            <span>Написати в Telegram</span>
+          </button>
+          <button class="social-button viber">
+            <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/basil-viber-solid.svg" alt="Viber">
+          </button>
+          <button class="social-button whatsapp">
+            <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/mingcute-whatsapp-fill.svg" alt="WhatsApp">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Popup -->
+    <div class="cart-popup">
+      <div class="cart-card">
+        <div class="cart-header">
+          <h2>Кошик</h2>
+          <span>1 товар</span>
+          <button class="close-cart">×</button>
+        </div>
+        <div class="cart-items">
+          <div class="cart-item">
+            <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/rectangle-93.svg" alt="Bitmain Antminer L9">
+            <div class="item-info">
+              <h3>Bitmain Antminer L9 Scrypt 15 Gh</h3>
+              <p class="item-price">9000$</p>
+              <button class="go-to-item">Перейти до товару <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
+              <div class="quantity-control">
+                <button class="qty-btn minus">-</button>
+                <span class="qty">1</span>
+                <button class="qty-btn plus">+</button>
+              </div>
+            </div>
+          </div>
+          <!-- Додатковий елемент -->
+          <div class="cart-item">
+            <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/rectangle-93.svg" alt="Bitmain Antminer L9">
+            <div class="item-info">
+              <h3>Bitmain Antminer L9 Scrypt 15 Gh</h3>
+              <p class="item-price">9000$</p>
+              <button class="go-to-item">Перейти до товару <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
+              <div class="quantity-control">
+                <button class="qty-btn minus">-</button>
+                <span class="qty">1</span>
+                <button class="qty-btn plus">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-footer">
+          <div class="total-price">
+            <span>Разом: </span>
+            <span>18 000$</span>
+          </div>
+          <button class="checkout-btn">Оформити замовлення</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">5 РОКІВ</div>
+          <p>На ринку<br>в Україні</p>
+        </div>
+        <div class="stat-separator"></div>
+        <div class="stat-item">
+          <div class="stat-number">1000+</div>
+          <p>Довольних<br>клієнтів</p>
+        </div>
+        <div class="stat-separator"></div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <p>Гарантія<br>безпеки</p>
+        </div>
+        <div class="stat-separator"></div>
+        <div class="stat-item icon-stat">
+          <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/tech-support-number---iconsvg-co.svg" alt="Tech Support">
+          <p>Тех. підтримка<br>24 на 7</p>
+        </div>
+        <div class="stat-separator"></div>
+        <div class="stat-item icon-stat">
+          <img src="https://c.animaapp.com/mfgu4dnnnRPVYF/img/box-up-your-things---iconsvg-co.svg" alt="Direct Delivery">
+          <p>Прямі<br>Поставки</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gw-section">
+      <div class="gw-header">
+        <h2 class="gw-title">ТОП 5 КРИПТОФЕРМ</h2>
+        <div class="gw-month-label">
+          <img
+                className="w-8 h-8"
+                alt="Material symbols"
+                src="https://c.animaapp.com/mfjq42qgTkiDBx/img/material-symbols-crown.svg"
+              />
+          <p class="gw-month-title">
+              ВЕРЕСЕНЬ
+          </p>
+        </div>
+      </div>
+      <div class="gw-grid-container">
+        <div class="gw-product-card">
+          <div class="gw-card-content">
+            <!-- Product Title -->
+            <div class="gw-product-title">Bitmain Antminer<br>L9 Scrypt 15 Gh</div>
+
+            <!-- Stats Section -->
+            <div class="gw-stats-section">
+              <div class="gw-stats-background"></div>
+              <!-- Monthly Earnings -->
+              <div class="gw-monthly-earnings">
+                <div class="gw-earnings-text">В місяць</div>
+                <div class="gw-earnings-amount">715$</div>
+              </div>
+              <!-- Power and Hash Rate -->
+              <div class="gw-power-hash">
+                <div class="gw-power">
+                  <div class="gw-power-text">кВт/Год</div>
+                  <div class="gw-power-value">3.6</div>
+                </div>
+                <div class="gw-hash">
+                  <div class="gw-hash-text">Gh/s</div>
+                  <div class="gw-hash-value">16</div>
+                </div>
+                <div class="gw-stats-line"></div>
+              </div>
+            </div>
+
+            <!-- Product Image -->
+            <img src="https://c.animaapp.com/mfjq42qgTkiDBx/img/image-1-1.png" alt="Product" class="gw-product-image">
+
+            <!-- Price and Actions Section -->
+            <div class="gw-price-actions">
+              <!-- Price and Status -->
+              <div class="gw-price-status">
+                <div class="gw-product-price">9000$</div>
+                <div class="gw-product-status">
+                  <span class="gw-status-dot" style="background-color: #48af4c;"></span>
+                  <span class="gw-status-text" style="color: #48af4c;">В наявності</span>
+                </div>
+              </div>
+              <!-- Buy Button and Favorite -->
+              <div class="gw-actions">
+                <button class="gw-buy-button">
+                  <img src="https://c.animaapp.com/mfjq42qgTkiDBx/img/icons8-buy.svg" alt="Buy" class="gw-buy-icon">
+                  <span class="gw-buy-text">Купити</span>
+                </button>
+                <button class="gw-favorite-button">
+                  <img src="https://c.animaapp.com/mfjq42qgTkiDBx/img/group-238.png" alt="Favorite" class="gw-favorite-icon">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gw-product-card">
+          <div class="gw-card-content">
+            <!-- Product Title -->
+            <div class="gw-product-title">Bitmain Antminer<br>S21+ 225 Th</div>
+
+            <!-- Stats Section -->
+            <div class="gw-stats-section">
+              <div class="gw-stats-background"></div>
+              <!-- Monthly Earnings -->
+              <div class="gw-monthly-earnings">
+                <div class="gw-earnings-text">В місяць</div>
+                <div class="gw-earnings-amount">400$</div>
+              </div>
+              <!-- Power and Hash Rate -->
+              <div class="gw-power-hash">
+                <div class="gw-power">
+                  <div class="gw-power-text">кВт/Год</div>
+                  <div class="gw-power-value">3.6</div>
+                </div>
+                <div class="gw-hash">
+                  <div class="gw-hash-text">Th/s</div>
+                  <div class="gw-hash-value">225</div>
+                </div>
+                <div class="gw-stats-line"></div>
+              </div>
+            </div>
+
+            <!-- Product Image -->
+            <img src="https://c.animaapp.com/mfjq42qgTkiDBx/img/image-1-1.png" alt="Product" class="gw-product-image">
+
+            <!-- Price and Actions Section -->
+            <div class="gw-price-actions">
+              <!-- Price and Status -->
+              <div class="gw-price-status">
+                <div class="gw-product-price">4000$</div>
+                <div class="gw-product-status">
+                  <span class="gw-status-dot" style="background-color: #eaa43a;"></span>
+                  <span class="gw-status-text" style="color: #eaa43a;">Товар закінчується</span>
+                </div>
+              </div>
+              <!-- Buy Button and Favorite -->
+              <div class="gw-actions">
+                <button class="gw-buy-button">
+                  <img src="https://c.animaapp.com/mfjq42qgTkiDBx/img/icons8-buy.svg" alt="Buy" class="gw-buy-icon">
+                  <span class="gw-buy-text">Купити</span>
+                </button>
+                <button class="gw-favorite-button">
+                  <img src="https://c.animaapp.com/mfjq42qgTkiDBx/img/group-240.png" alt="Favorite" class="gw-favorite-icon">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gw-product-card">
+          <div class="gw-card-content">
+            <!-- Product Title -->
+            <div class="gw-product-title">Bitmain Antminer<br>S21+ HYDRO 338 Th</div>
+
+            <!-- Stats Section -->
+            <div class="gw-stats-section">
+              <div class="gw-stats-background"></div>
+              <!-- Monthly Earnings -->
+              <div class="gw-monthly-earnings">
+                <div class="gw-earnings-text">В місяць</div>
+                <div class="gw-earnings-amount">605$</div>
+              </div>
+              <!-- Power and Hash Rate -->
+              <div class="gw-power-hash">
+                <div class="gw-power">
+                  <div class="gw-power-text">кВт/Год</div>
+                  <div class="gw-power-value">3.6</div>
+                </div>
+                <div class="gw-hash">
+                  <div class="gw-hash-text">Th/s</div>
+                  <div class="gw-hash-value">338</div>
+                </div>
+                <div class="gw-stats-line"></div>
+              </div>
+            </div>
+
+            <!-- Product Image -->
+            <img src="https://c.animaapp.com/mfjq42qgTkiDBx/img/image-1-4.png" alt="Product" class="gw-product-image">
+
+            <!-- Price and Actions Section -->
+            <div class="gw-price-actions">
+              <!-- Price and Status -->
+              <div class="gw-price-status">
+                <div class="gw-product-price">6200$</div>
+                <div class="gw-product-status">
+                  <span class="gw-status-dot" style="background-color: #d93333;"></span>
+                  <span class="gw-status-text" style="color: #d93333;">Немає в наявності</span>
+                </div>
+              </div>
+              <!-- Buy Button and Favorite -->
+              <div class="gw-actions">
+                <button class="gw-buy-button">
+                  <img src="https://c.animaapp.com/mfjq42qgTkiDBx/img/icons8-buy.svg" alt="Buy" class="gw-buy-icon">
+                  <span class="gw-buy-text">Купити</span>
+                </button>
+                <button class="gw-favorite-button">
+                  <img src="https://c.animaapp.com/mfjq42qgTkiDBx/img/group-240-1.png" alt="Favorite" class="gw-favorite-icon">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gw-product-card">
+          <div class="gw-card-content">
+            <!-- Product Title -->
+            <div class="gw-product-title">Bitmain Antminer<br>S21+ HYDRO 395 Th</div>
+
+            <!-- Stats Section -->
+            <div class="gw-stats-section">
+              <div class="gw-stats-background"></div>
+              <!-- Monthly Earnings -->
+              <div class="gw-monthly-earnings">
+                <div class="gw-earnings-text">В місяць</div>
+                <div class="gw-earnings-amount">660$</div>
+              </div>
+              <!-- Power and Hash Rate -->
+              <div class="gw-power-hash">
+                <div class="gw-power">
+                  <div class="gw-power-text">кВт/Год</div>
+                  <div class="gw-power-value">3.6</div>
+                </div>
+                <div class="gw-hash">
+                  <div class="gw-hash-text">Th/s</div>
+                  <div class="gw-hash-value">395</div>
+                </div>
+                <div class="gw-stats-line"></div>
+              </div>
+            </div>
+
+            <!-- Product Image -->
+            <img src="https://c.animaapp.com/mfjq42qgTkiDBx/img/image-1-4.png" alt="Product" class="gw-product-image">
+
+            <!-- Price and Actions Section -->
+            <div class="gw-price-actions">
+              <!-- Price and Status -->
+              <div class="gw-price-status">
+                <div class="gw-product-price">7200$</div>
+                <div class="gw-product-status">
+                  <span class="gw-status-dot" style="background-color: #48af4c;"></span>
+                  <span class="gw-status-text" style="color: #48af4c;">В наявності</span>
+                </div>
+              </div>
+              <!-- Buy Button and Favorite -->
+              <div class="gw-actions">
+                <button class="gw-buy-button">
+                  <img src="https://c.animaapp.com/mfjq42qgTkiDBx/img/icons8-buy.svg" alt="Buy" class="gw-buy-icon">
+                  <span class="gw-buy-text">Купити</span>
+                </button>
+                <button class="gw-favorite-button">
+                  <img src="https://c.animaapp.com/mfjq42qgTkiDBx/img/group-240-2.png" alt="Favorite" class="gw-favorite-icon">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gw-product-card">
+          <div class="gw-card-content">
+            <!-- Product Title -->
+            <div class="gw-product-title">Bitmain Antminer<br>S21+ HYDRO 473 Th</div>
+
+            <!-- Stats Section -->
+            <div class="gw-stats-section">
+              <div class="gw-stats-background"></div>
+              <!-- Monthly Earnings -->
+              <div class="gw-monthly-earnings">
+                <div class="gw-earnings-text">В місяць</div>
+                <div class="gw-earnings-amount">800$</div>
+              </div>
+              <!-- Power and Hash Rate -->
+              <div class="gw-power-hash">
+                <div class="gw-power">
+                  <div class="gw-power-text">кВт/Год</div>
+                  <div class="gw-power-value">3.6</div>
+                </div>
+                <div class="gw-hash">
+                  <div class="gw-hash-text">Th/s</div>
+                  <div class="gw-hash-value">473</div>
+                </div>
+                <div class="gw-stats-line"></div>
+              </div>
+            </div>
+
+            <!-- Product Image -->
+            <img src="https://c.animaapp.com/mfjq42qgTkiDBx/img/image-1-4.png" alt="Product" class="gw-product-image">
+
+            <!-- Price and Actions Section -->
+            <div class="gw-price-actions">
+              <!-- Price and Status -->
+              <div class="gw-price-status">
+                <div class="gw-product-price">11000$</div>
+                <div class="gw-product-status">
+                  <span class="gw-status-dot" style="background-color: #48af4c;"></span>
+                  <span class="gw-status-text" style="color: #48af4c;">В наявності</span>
+                </div>
+              </div>
+              <!-- Buy Button and Favorite -->
+              <div class="gw-actions">
+                <button class="gw-buy-button">
+                  <img src="https://c.animaapp.com/mfjq42qgTkiDBx/img/icons8-buy.svg" alt="Buy" class="gw-buy-icon">
+                  <span class="gw-buy-text">Купити</span>
+                </button>
+                <button class="gw-favorite-button">
+                  <img src="https://c.animaapp.com/mfjq42qgTkiDBx/img/group-240-3.png" alt="Favorite" class="gw-favorite-icon">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mining-section">
+      <div class="mining-box">
+        <div class="mining-view">
+          <div class="mining-group">
+            <div class="mining-div">
+              <p class="mining-title">
+                <span class="mining-text-wrapper">ЯК ПОЧАТИ</span>
+                <span class="mining-span">&nbsp;</span>
+                <span class="mining-text-wrapper-2">ЗАРОБЛЯТИ</span>
+                <span class="mining-span">&nbsp;</span>
+                <span class="mining-text-wrapper">НА </span>
+                <span class="mining-text-wrapper-2">МАЙНІНГУ</span>
+                <span class="mining-span">&nbsp;</span>
+                <span class="mining-text-wrapper">КРИПТОВАЛЮТИ?</span>
+              </p>
+              <p class="mining-text-wrapper-3">Ось 5 простих кроків, щоб почати заробляти на майнінгу криптовалюти:</p>
+            </div>
+          </div>
+          <div class="mining-group-2">
+            <div class="mining-overlap-group-wrapper">
+              <div class="mining-overlap-group">
+                <div class="mining-text-wrapper-4">Консультація з нашим менеджером</div>
+                <p class="mining-text-wrapper-5">
+                  Зверніться до нашого менеджера на сайті, щоб отримати поради щодо вибору криптовалюти та стратегії
+                  майнінгу.
+                </p>
+                <div class="mining-text-wrapper-6">01</div>
+                <img class="mining-icon" src="https://c.animaapp.com/mfjw62ej3Y4nyV/img/icon.png" />
+              </div>
+            </div>
+            <div class="mining-group-3">
+              <div class="mining-group-4">
+                <div class="mining-text-wrapper-7">Запустіть майнінг</div>
+                <p class="mining-text-wrapper-8">
+                  Купіть обладнання, створіть криптогаманець (є відео на нашому ютуб), підключіть кабель живлення та
+                  інтернет, налаштуйте (є відео на нашому ютуб або зверніться до нас).
+                </p>
+                <div class="mining-text-wrapper-9">04</div>
+                <p class="mining-text-wrapper-10">І все, отримуйте свою першу крипту на гаманець!</p>
+              </div>
+              <img
+                class="mining-exam-pedia-yellow"
+                src="https://c.animaapp.com/mfjw62ej3Y4nyV/img/exam-pedia-3d-yellow-balck-1.png"
+              />
+            </div>
+            <div class="mining-overlap-wrapper">
+              <div class="mining-overlap">
+                <div class="mining-overlap-2">
+                  <div class="mining-text-wrapper-11">Оцініть прибуток</div>
+                  <div class="mining-overlap-group-2">
+                    <p class="mining-text-wrapper-12">Розрахуйте потенційний дохід від майнінгу.</p>
+                    <img class="mining-design" src="https://c.animaapp.com/mfjw62ej3Y4nyV/img/design1-1.png" />
+                  </div>
+                  <div class="mining-text-wrapper-13">03</div>
+                </div>
+                <div class="mining-group-wrapper">
+                  <div class="mining-group-5">
+                    <div class="mining-text-wrapper-14">Приклад:</div>
+                    <div class="mining-frame">
+                      <div class="mining-frame-2">
+                        <div class="mining-text-wrapper-15">ANTMINER L9 16Gh</div>
+                        <div class="mining-text-wrapper-16">/</div>
+                        <div class="mining-text-wrapper-15">Ціна: 6500$</div>
+                        <div class="mining-text-wrapper-16">/</div>
+                        <div class="mining-text-wrapper-15">Прибуток на місяць: 720$</div>
+                        <div class="mining-text-wrapper-16">/</div>
+                      </div>
+                      <div class="mining-frame-3">
+                        <p class="mining-text-wrapper-15">
+                          Cпоживання: 4 кВт/год х 24год = 88 кВт в день , 88 х 30 днів = 2640 кВт
+                        </p>
+                        <div class="mining-text-wrapper-16">/</div>
+                      </div>
+                      <div class="mining-frame-2">
+                        <p class="mining-text-wrapper-15">Ціна електроенергії (Тариф День/Ніч) = 3.6 грн/Квт</p>
+                        <div class="mining-text-wrapper-16">/</div>
+                      </div>
+                      <div class="mining-frame-2">
+                        <p class="mining-text-wrapper-15">Витрати на місяць: 2640 кВт/Міс. х 3.6 грн/кВт = 9504 грн (230$)</p>
+                        <div class="mining-text-wrapper-16">/</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="mining-text-wrapper-17">Чистий прибуток: 720$ - 230$ = 490$ в міс.</p>
+              </div>
+            </div>
+            <div class="mining-div-wrapper">
+              <div class="mining-overlap-3">
+                <div class="mining-overlap-group-3">
+                  <img class="mining-mask-group" src="https://c.animaapp.com/mfjw62ej3Y4nyV/img/mask-group.png" />
+                  <div class="mining-text-wrapper-18">Виберіть обладнання</div>
+                  <p class="mining-text-wrapper-19">
+                    На нашому сайті ознайомтесь із цінами на обладнання, подивіться який прибуток на місяць, та яке
+                    споживання на годину.
+                  </p>
+                </div>
+                <div class="mining-text-wrapper-20">02</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-section">
+      <div class="social-box">
+        <div class="social-view">
+          <div class="social-overlap">
+            <div class="social-group">
+              <img class="social-phone" src="https://c.animaapp.com/mfjxamrhgPb3CJ/img/phone-1.png" />
+              <div class="social-content">
+                <div class="social-frame">
+                  <div class="social-overlap-group-wrapper">
+                    <div class="social-overlap-group"><div class="social-text-wrapper">Telegram</div></div>
+                  </div>
+                  <div class="social-overlap-wrapper">
+                    <div class="social-overlap-group"><div class="social-text-wrapper-2">YouTube</div></div>
+                  </div>
+                  <div class="social-overlap-wrapper">
+                    <div class="social-overlap-group"><div class="social-text-wrapper-3">TikTok</div></div>
+                  </div>
+                  <div class="social-overlap-wrapper">
+                    <div class="social-overlap-group"><div class="social-text-wrapper-4">Прайс</div></div>
+                  </div>
+                  <div class="social-content-wrapper">
+                    <div class="social-overlap-group"><div class="social-text-wrapper-5">Калькулятор</div></div>
+                  </div>
+                </div>
+                <div class="social-frame-2">
+                  <div class="social-group-2">
+                    <div class="social-text-wrapper-6">Телеграм канал</div>
+                    <div class="social-text-wrapper-7">CRYPTOPAPA_UA</div>
+                    <img
+                      class="social-ic-baseline-telegram"
+                      src="https://c.animaapp.com/mfjxamrhgPb3CJ/img/ic-baseline-telegram.svg"
+                    />
+                  </div>
+                  <div class="social-group-3">
+                    <p class="social-paragraph">Тут багато лайв-контенту, та вигідних пропозицій</p>
+                    <div class="social-group-4">
+                      <div class="social-overlap-group-2">
+                        <div class="social-text-wrapper-8">Перейти в Телеграм</div>
+                        <div class="social-rectangle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="social-coin" src="https://c.animaapp.com/mfjxamrhgPb3CJ/img/coin-6.png" />
+            <img class="social-coin-img" src="https://c.animaapp.com/mfjxamrhgPb3CJ/img/coin-4.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="footer-section.css" />
+  </head>
+  <body>
+    <footer class="footer-section">
+      <div class="footer-box">
+        <div class="footer-view">
+          <div class="footer-overlap">
+            <div class="footer-ellipse"></div>
+            <div class="footer-group">
+              <img class="footer-logo" src="https://c.animaapp.com/mfjxj8qd7KUH7a/img/group-338.png" />
+              <div class="footer-frame">
+                <div class="footer-text-wrapper">Меню сайта</div>
+                <div class="footer-rectangle"></div>
+                <div class="footer-menu">
+                  <div class="footer-text-wrapper-2">Головна</div>
+                  <div class="footer-text-wrapper-3">Обладнання</div>
+                  <div class="footer-text-wrapper-3">Криптокотли</div>
+                  <div class="footer-text-wrapper-3">Сонячні станції</div>
+                  <div class="footer-text-wrapper-3">Про компанію</div>
+                  <div class="footer-text-wrapper-4">Прошивка</div>
+                </div>
+              </div>
+              <div class="footer-frame-2">
+                <div class="footer-text-wrapper">Про компанію</div>
+                <div class="footer-rectangle"></div>
+                <div class="footer-menu">
+                  <div class="footer-text-wrapper-2">Про нас</div>
+                  <div class="footer-text-wrapper-3">Контакти</div>
+                  <div class="footer-text-wrapper-5">Політика<br />конфіденційності</div>
+                </div>
+              </div>
+              <div class="footer-group-wrapper">
+                <div class="footer-group-2">
+                  <div class="footer-frame-3">
+                    <div class="footer-frame-4">
+                      <img class="footer-img-2" src="https://c.animaapp.com/mfjxj8qd7KUH7a/img/ic-baseline-telegram.svg" />
+                      <div class="footer-text-wrapper-6">Telegram</div>
+                    </div>
+                    <img class="footer-line" src="https://c.animaapp.com/mfjxj8qd7KUH7a/img/line-4.svg" />
+                    <div class="footer-frame-5">
+                      <img class="footer-img-2" src="https://c.animaapp.com/mfjxj8qd7KUH7a/img/mdi-youtube.svg" />
+                      <div class="footer-text-wrapper-6">YouTube</div>
+                    </div>
+                    <img class="footer-line" src="https://c.animaapp.com/mfjxj8qd7KUH7a/img/line-4.svg" />
+                    <div class="footer-frame-5">
+                      <img class="footer-img-2" src="https://c.animaapp.com/mfjxj8qd7KUH7a/img/ic-baseline-tiktok.svg" />
+                      <div class="footer-text-wrapper-6">TikTok</div>
+                    </div>
+                    <img class="footer-line" src="https://c.animaapp.com/mfjxj8qd7KUH7a/img/line-4.svg" />
+                    <div class="footer-frame-6">
+                      <img class="footer-img-2" src="https://c.animaapp.com/mfjxj8qd7KUH7a/img/basil-viber-solid.svg" />
+                      <div class="footer-text-wrapper-6">Viber</div>
+                    </div>
+                    <img class="footer-line" src="https://c.animaapp.com/mfjxj8qd7KUH7a/img/line-4.svg" />
+                    <div class="footer-frame-5">
+                      <img class="footer-img-2" src="https://c.animaapp.com/mfjxj8qd7KUH7a/img/mingcute-whatsapp-fill.svg" />
+                      <div class="footer-text-wrapper-6">WhatsApp</div>
+                    </div>
+                  </div>
+                  <div class="footer-text-wrapper-7">Наші соцмережі:</div>
+                </div>
+              </div>
+              <div class="footer-group-3">
+                <div class="footer-search-wrapper">
+                  <div class="footer-group-4">
+                    <div class="footer-text-wrapper-8">Знайти товар</div>
+                    <img
+                      class="footer-material-symbols"
+                      src="https://c.animaapp.com/mfjxj8qd7KUH7a/img/material-symbols-search-rounded.svg"
+                    />
+                  </div>
+                </div>
+                <div class="footer-group-5">
+                  <div class="footer-text-wrapper-9">+38 073 553 7777</div>
+                  <div class="footer-group-6">
+                    <div class="footer-group-7">
+                      <div class="footer-ellipse-2"></div>
+                      <div class="footer-text-wrapper-10">Цілодобово, без вихідних</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-group-8">
+                  <p class="footer-address">Україна, Київ, вул.<br />Харківське шоссе 188</p>
+                  <div class="footer-overlap-group-wrapper">
+                    <div class="footer-overlap-group">
+                      <div class="footer-rectangle-2"></div>
+                      <div class="footer-group-9"><div class="footer-text-wrapper-11">Центральний офіс</div></div>
+                    </div>
+                  </div>
+                </div>
+                <img class="footer-line-2" src="https://c.animaapp.com/mfjxj8qd7KUH7a/img/line-10.svg" />
+              </div>
+            </div>
+            <img class="footer-mask-group" src="https://c.animaapp.com/mfjxj8qd7KUH7a/img/mask-group.png" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+  <script>
+    // JavaScript для дропдауна мов
+    const languageSelector = document.querySelector('.language-selector');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    if (languageSelector && dropdownMenu) {
+      languageSelector.addEventListener('click', (e) => {
+        e.preventDefault();
+        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!languageSelector.contains(e.target)) {
+          dropdownMenu.style.display = 'none';
+        }
+      });
+    }
+
+    // Показати кошик при кліку на іконку кошика
+    const cartIcon = document.querySelector('.icon.cart');
+    const cartPopup = document.querySelector('.cart-popup');
+    if (cartIcon && cartPopup) {
+      cartIcon.addEventListener('click', (e) => {
+        e.stopPropagation();
+        cartPopup.style.display = 'block';
+      });
+    }
+
+    const closeCart = document.querySelector('.close-cart');
+    if (closeCart) {
+      closeCart.addEventListener('click', () => {
+        cartPopup.style.display = 'none';
+      });
+    }
+
+    // Закриття кошика при кліку поза ним
+    document.addEventListener('click', (e) => {
+      if (!cartPopup.contains(e.target) && cartPopup.style.display === 'block') {
+        cartPopup.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
