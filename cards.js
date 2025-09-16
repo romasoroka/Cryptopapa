@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("cards-container");
 
   // Створюємо один контейнер для всіх карток
-  let html = `<div class="grid grid-cols-5 gap-[1.875rem] mt-[2.5rem]">`;
+  let html = `<div class="grid grid-cols-5 gap-[1rem] mt-[2.5rem]">`;
 
   // Додаємо картки в цикл
   for (let i = 0; i < 5; i++) {
