@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Головна - Інтернет магазин</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header
+      class="relative w-[70%] h-[12rem] bg-[#f4f4f4] top-0 left-1/2 -translate-x-1/2 z-50"
+    >
+      <div class="w-full mx-auto px-[3rem] h-full flex flex-col">
+        <div class="flex items-center justify-between h-[7.5rem]">
+          <img
+            class="w-[16.275rem] ml-6 h-[4.5rem]"
+            src="https://c.animaapp.com/mfl9c01b1wK2Pk/img/group-7.png"
+            alt="Логотип компанії"
+          />
+          <div class="flex items-center gap-[1.2rem] ml-4">
+            <button
+              class="w-[12.575rem] h-[4.5rem] pl-4 rounded-[0.75rem] bg-gradient-to-r from-[#FF7800] to-[#FFA600] flex items-center justify-start gap-[1.125rem] border-0 cursor-pointer"
+              aria-label="Відкрити каталог товарів"
+            >
+              <img
+                class="w-[2.4rem] h-[2.4rem]"
+                src="https://c.animaapp.com/mfl9c01b1wK2Pk/img/material-symbols-menu-rounded.svg"
+                alt="Іконка меню"
+              />
+              <span class="font-montserrat font-bold text-white text-[1.5rem]"
+                >Каталог</span
+              >
+            </button>
+            <div
+              class="w-[23.525rem] h-[4.5rem] bg-gradient-to-r from-[#E8E8E8] to-[#F6F6F6] rounded-[0.75rem] flex items-center gap-[1.125rem] pl-[0.75rem]"
+            >
+              <img
+                class="w-[2.4rem] h-[2.4rem]"
+                src="https://c.animaapp.com/mfl9c01b1wK2Pk/img/material-symbols-search-rounded.svg"
+                alt="Іконка пошуку"
+              />
+              <input
+                type="search"
+                placeholder="Знайти товар"
+                class="font-montserrat text-[#AAAAAA] text-[1.2rem] bg-transparent border-0 outline-0 w-full"
+                aria-label="Пошук товарів"
+              />
+            </div>
+            <div class="flex items-center gap-[1.2rem]">
+              <button
+                class="relative w-[3.15rem] h-[3.15rem] bg-transparent border-0 cursor-pointer"
+                aria-label="Кошик покупок, 2 товари"
+              >
+                <img
+                  class="w-[2.1rem] h-[2.1rem] absolute top-[0.525rem] left-0"
+                  src="https://c.animaapp.com/mfl9c01b1wK2Pk/img/vector.svg"
+                  alt="Іконка кошика"
+                />
+                <div
+                  class="absolute w-[1.425rem] h-[1.275rem] top-0 left-[1.35rem] bg-[#FFA500] rounded-full border-2 border-white flex items-center justify-center"
+                >
+                  <span
+                    class="font-montserrat font-semibold text-white text-[0.9rem]"
+                    >2</span
+                  >
+                </div>
+              </button>
+              <img
+                class="w-[0.075rem] h-[3rem]"
+                src="https://c.animaapp.com/mfl9c01b1wK2Pk/img/line-2.svg"
+                alt="Розділювач"
+              />
+              <button
+                class="relative w-[3.15rem] h-[3.15rem] bg-transparent border-0 cursor-pointer"
+                aria-label="Список бажань, 2 товари"
+              >
+                <img
+                  class="w-[2.4rem] h-[2.1rem] absolute top-[0.525rem] left-0"
+                  src="https://c.animaapp.com/mfl9c01b1wK2Pk/img/vector-1.svg"
+                  alt="Іконка серця"
+                />
+                <div
+                  class="absolute w-[1.425rem] h-[1.275rem] top-0 left-[1.75rem] bg-[#D93333] rounded-full border-2 border-white flex items-center justify-center"
+                >
+                  <span
+                    class="font-montserrat font-semibold text-white text-[0.9rem]"
+                    >2</span
+                  >
+                </div>
+              </button>
+              <img
+                class="w-[0.075rem] h-[3rem]"
+                src="https://c.animaapp.com/mfl9c01b1wK2Pk/img/line-2.svg"
+                alt="Розділювач"
+              />
+              <button
+                class="w-[2.4rem] h-[2.4rem] bg-transparent border-0 cursor-pointer"
+                aria-label="Зв'язатися по телефону"
+              >
+                <img
+                  class="w-[2.4rem] h-[2.4rem]"
+                  src="https://c.animaapp.com/mfl9c01b1wK2Pk/img/solar-phone-linear.svg"
+                  alt="Іконка телефону"
+                />
+              </button>
+              <img
+                class="w-[0.075rem] h-[3rem]"
+                src="https://c.animaapp.com/mfl9c01b1wK2Pk/img/line-2.svg"
+                alt="Розділювач"
+              />
+              <div class="relative">
+                <!-- Кнопка вибору мови -->
+                <button
+                  class="flex items-center gap-[0.75rem] bg-transparent border-0 cursor-pointer"
+                  aria-label="Змінити мову, поточна: українська"
+                  onclick="document.getElementById('lang-menu').classList.toggle('hidden')"
+                >
+                  <span
+                    class="font-montserrat font-medium text-black text-[1.2rem]"
+                    >UA</span
+                  >
+                  <img
+                    class="w-[1.2rem] h-[0.6rem]"
+                    src="https://c.animaapp.com/mfl9c01b1wK2Pk/img/weui-arrow-filled.svg"
+                    alt="Стрілка вниз"
+                  />
+                </button>
+
+                <div
+                  id="lang-menu"
+                  class="absolute -left-[180px] top-[137px] mt-2 w-60 bg-white border border-gray-200 shadow-lg hidden z-50"
+                >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-black hover:bg-gray-100 font-montserrat text-[1rem]"
+                    >Українська</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-black hover:bg-gray-100 font-montserrat text-[1rem]"
+                    >Російська</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav
+          class="w-full h-[4.5rem] bg-[#f4f4f4] border-t border-b border-[#E7E7E7] flex items-center"
+          role="navigation"
+          aria-label="Головна навігація"
+        >
+          <div
+            class="w-full mx-auto px-[2rem] flex gap-[3rem] whitespace-nowrap"
+          >
+            <a
+              href="#"
+              class="font-montserrat font-bold text-black text-[1.5rem] no-underline"
+              aria-current="page"
+              >Головна</a
+            >
+            <a
+              href="#"
+              class="font-montserrat font-normal text-black text-[1.5rem] opacity-70 hover:opacity-100 focus:opacity-100 no-underline"
+              >Обладнання</a
+            >
+            <a
+              href="#"
+              class="font-montserrat font-normal text-black text-[1.5rem] opacity-70 hover:opacity-100 focus:opacity-100 no-underline"
+              >Криптокотли</a
+            >
+            <a
+              href="#"
+              class="font-montserrat font-normal text-black text-[1.5rem] opacity-70 hover:opacity-100 focus:opacity-100 no-underline"
+              >Сонячні станції</a
+            >
+            <a
+              href="#"
+              class="font-montserrat font-normal text-black text-[1.5rem] opacity-70 hover:opacity-100 focus:opacity-100 no-underline"
+              >Про компанію</a
+            >
+            <a
+              href="#"
+              class="font-montserrat font-normal text-black text-[1.5rem] opacity-70 hover:opacity-100 focus:opacity-100 no-underline"
+              >Прошивка</a
+            >
+            <a
+              href="#"
+              class="font-montserrat font-normal text-black text-[1.5rem] opacity-70 hover:opacity-100 focus:opacity-100 no-underline"
+              >Контакти</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
